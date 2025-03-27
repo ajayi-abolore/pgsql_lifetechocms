@@ -5,7 +5,7 @@ $user = "postgres";
 $password = "your_password";
 
 try {
-    // Create a PDO instance
+    // Create a PDO instanced
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected to PostgreSQL successfully!";
