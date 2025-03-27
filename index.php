@@ -11,15 +11,15 @@ try {
     echo "Connected to PostgreSQL successfully!";
  
  // Insert Query
-    $sql = 'INSERT INTO product3 (keyid, valueId, "dateId") VALUES (:keyid, :valueId, :dateId)';
+    $sql = 'INSERT INTO product3 (keyid, valueIds, "dateId") VALUES (:keyid, :valueIds, :dateId)';
     
     // Prepare the statement
     $stmt = $pdo->prepare($sql);
 
     // Execute the statement
     $stmt->execute([
-        ':keyid'   => '123452',  // Example key
-        ':valueId' => 'Some data',
+        ':keyid'   => '12345',  // Example key
+        ':valueIds' => 'Some data',
         ':dateId'  => '2025-03-26 12:30:00' // Example date
     ]);
 
