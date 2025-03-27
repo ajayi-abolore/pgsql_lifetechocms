@@ -4,6 +4,11 @@ $dbname = "lifetechocms";
 $user = "postgres";
 $password = "your_password";
 
+$hostMysql = "localhost";
+$dbnameMysql = "lifetechocms";
+$userMysql = "root";
+$passwordMysql = "";
+
 try {
     // Create a PDO instanced
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
